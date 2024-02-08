@@ -101,5 +101,7 @@ $(document).ready(function () {
     }
 
     // Event listener for the start exam button
-    $('.btn-start-exam').on('click', startExam);
+    $(document).on('click', '.btn-start-exam', startExam);
+    $(document).on('click', '.btn-revert-exam', revertExam);
+    $(document).on('click', '.btn-reboot-exam', rebootExam);
 });
